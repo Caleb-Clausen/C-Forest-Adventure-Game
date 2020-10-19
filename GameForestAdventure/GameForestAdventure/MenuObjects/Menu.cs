@@ -1,6 +1,7 @@
 ﻿using System;
 using GameForestAdventure.Player;
 namespace GameForestAdventure.MenuObjects
+
 {
     public class Menu
     {

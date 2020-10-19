@@ -13,6 +13,7 @@ namespace GameForestAdventure.Player
         {
             playerHealth = this.playerHealth;
             playerMana = this.playerMana;
+
         }
 
     }
