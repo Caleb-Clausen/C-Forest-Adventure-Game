@@ -1,5 +1,4 @@
 ﻿using System;
-using GameForestAdventure.Player;
 namespace GameForestAdventure.MenuObjects
 
 {
@@ -16,7 +15,7 @@ namespace GameForestAdventure.MenuObjects
             while (menuOpen)
             {
                 Console.WriteLine("Welcome to the game menu!");
-                Console.WriteLine("here are the current Menu choices");
+                Console.WriteLine("Here are the current Menu choices");
                 Console.WriteLine("(1) Play");
                 Console.WriteLine("(2) Load Game");
                 Console.WriteLine("(3) Exit Game");

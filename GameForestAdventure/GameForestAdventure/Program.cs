@@ -1,7 +1,9 @@
 ﻿using System;
 using GameForestAdventure.MenuObjects;
-using GameForestAdventure.Player;
+using GameForestAdventure.Player_And_Monsters;
 using System.Data.SqlClient;
+using GameForestAdventure.MenuObjects.DataHelper;
+
 namespace GameForestAdventure
 {
     class Program
@@ -15,10 +17,12 @@ namespace GameForestAdventure
         public enum Movement { Front, Left, Right, Back}
         static void Main(string[] args)
         {
+            Map Test = new Map();
+            Test.MapSave.Write("COOOOOOL");
             bool gameRunning = true;
             Menu newMenu = new Menu();
             newMenu.StartMenu();
-            PlayerCharacter player1 = new PlayerCharacter(10, 20);
+            PlayerCharacter player1 = new PlayerCharacter("nice", 10, 20);
             SceneTown Actone = new SceneTown();
             while(gameRunning = true)
             {
