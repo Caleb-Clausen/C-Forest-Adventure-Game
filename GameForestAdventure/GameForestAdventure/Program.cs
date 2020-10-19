@@ -14,6 +14,7 @@ namespace GameForestAdventure
             SceneTown Actone = new SceneTown();
             SceneTown.ScenceOne();
             Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello World!");
         }
     }
 }

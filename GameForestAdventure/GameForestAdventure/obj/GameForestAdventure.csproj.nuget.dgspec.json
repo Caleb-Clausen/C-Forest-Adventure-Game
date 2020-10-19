@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cloudsan\\Desktop\\St martins\\CSC 205\\Home Work\\Final Project\\GameForestAdventure\\GameForestAdventure\\GameForestAdventure.csproj": {}
+    "C:\\Users\\Cloudsan\\Source\\Repos\\C-Forest-Adventure-Game\\GameForestAdventure\\GameForestAdventure\\GameForestAdventure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cloudsan\\Desktop\\St martins\\CSC 205\\Home Work\\Final Project\\GameForestAdventure\\GameForestAdventure\\GameForestAdventure.csproj": {
+    "C:\\Users\\Cloudsan\\Source\\Repos\\C-Forest-Adventure-Game\\GameForestAdventure\\GameForestAdventure\\GameForestAdventure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cloudsan\\Desktop\\St martins\\CSC 205\\Home Work\\Final Project\\GameForestAdventure\\GameForestAdventure\\GameForestAdventure.csproj",
+        "projectUniqueName": "C:\\Users\\Cloudsan\\Source\\Repos\\C-Forest-Adventure-Game\\GameForestAdventure\\GameForestAdventure\\GameForestAdventure.csproj",
         "projectName": "GameForestAdventure",
-        "projectPath": "C:\\Users\\Cloudsan\\Desktop\\St martins\\CSC 205\\Home Work\\Final Project\\GameForestAdventure\\GameForestAdventure\\GameForestAdventure.csproj",
+        "projectPath": "C:\\Users\\Cloudsan\\Source\\Repos\\C-Forest-Adventure-Game\\GameForestAdventure\\GameForestAdventure\\GameForestAdventure.csproj",
         "packagesPath": "C:\\Users\\Cloudsan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cloudsan\\Desktop\\St martins\\CSC 205\\Home Work\\Final Project\\GameForestAdventure\\GameForestAdventure\\obj\\",
+        "outputPath": "C:\\Users\\Cloudsan\\Source\\Repos\\C-Forest-Adventure-Game\\GameForestAdventure\\GameForestAdventure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cloudsan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
