@@ -24,3 +24,16 @@ C:\Users\Cloudsan\Source\Repos\C-Forest-Adventure-Game\GameForestAdventure\GameF
 C:\Users\Cloudsan\Source\Repos\C-Forest-Adventure-Game\GameForestAdventure\GameForestAdventure\obj\Debug\netcoreapp3.1\GameForestAdventure.dll
 C:\Users\Cloudsan\Source\Repos\C-Forest-Adventure-Game\GameForestAdventure\GameForestAdventure\obj\Debug\netcoreapp3.1\GameForestAdventure.pdb
 C:\Users\Cloudsan\Source\Repos\C-Forest-Adventure-Game\GameForestAdventure\GameForestAdventure\obj\Debug\netcoreapp3.1\GameForestAdventure.genruntimeconfig.cache
+C:\Program Files (x86)\source\repos\C-Forest-Adventure-Game\GameForestAdventure\GameForestAdventure\bin\Debug\netcoreapp3.1\GameForestAdventure.exe
+C:\Program Files (x86)\source\repos\C-Forest-Adventure-Game\GameForestAdventure\GameForestAdventure\bin\Debug\netcoreapp3.1\GameForestAdventure.deps.json
+C:\Program Files (x86)\source\repos\C-Forest-Adventure-Game\GameForestAdventure\GameForestAdventure\bin\Debug\netcoreapp3.1\GameForestAdventure.runtimeconfig.json
+C:\Program Files (x86)\source\repos\C-Forest-Adventure-Game\GameForestAdventure\GameForestAdventure\bin\Debug\netcoreapp3.1\GameForestAdventure.runtimeconfig.dev.json
+C:\Program Files (x86)\source\repos\C-Forest-Adventure-Game\GameForestAdventure\GameForestAdventure\bin\Debug\netcoreapp3.1\GameForestAdventure.dll
+C:\Program Files (x86)\source\repos\C-Forest-Adventure-Game\GameForestAdventure\GameForestAdventure\bin\Debug\netcoreapp3.1\GameForestAdventure.pdb
+C:\Program Files (x86)\source\repos\C-Forest-Adventure-Game\GameForestAdventure\GameForestAdventure\obj\Debug\netcoreapp3.1\GameForestAdventure.csprojAssemblyReference.cache
+C:\Program Files (x86)\source\repos\C-Forest-Adventure-Game\GameForestAdventure\GameForestAdventure\obj\Debug\netcoreapp3.1\GameForestAdventure.AssemblyInfoInputs.cache
+C:\Program Files (x86)\source\repos\C-Forest-Adventure-Game\GameForestAdventure\GameForestAdventure\obj\Debug\netcoreapp3.1\GameForestAdventure.AssemblyInfo.cs
+C:\Program Files (x86)\source\repos\C-Forest-Adventure-Game\GameForestAdventure\GameForestAdventure\obj\Debug\netcoreapp3.1\GameForestAdventure.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\source\repos\C-Forest-Adventure-Game\GameForestAdventure\GameForestAdventure\obj\Debug\netcoreapp3.1\GameForestAdventure.dll
+C:\Program Files (x86)\source\repos\C-Forest-Adventure-Game\GameForestAdventure\GameForestAdventure\obj\Debug\netcoreapp3.1\GameForestAdventure.pdb
+C:\Program Files (x86)\source\repos\C-Forest-Adventure-Game\GameForestAdventure\GameForestAdventure\obj\Debug\netcoreapp3.1\GameForestAdventure.genruntimeconfig.cache

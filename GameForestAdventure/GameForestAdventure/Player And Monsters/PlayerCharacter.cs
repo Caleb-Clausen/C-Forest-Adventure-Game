@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
-
+using GameForestAdventure.MenuObjects.DataHelper;
 namespace GameForestAdventure.Player_And_Monsters
 {
     class PlayerCharacter : GenericCharacterActions
     {
+        Point playerLocation = new Point(28,14);
         int playerHealth;
         int playerMana;
         string playerName;
@@ -27,23 +30,33 @@ namespace GameForestAdventure.Player_And_Monsters
 
         }
 
-        private void WalkFront(Object current)
+        private void WalkFront(Map current)
         {
 
         }
 
-        private void WalkBack(Object current)
+        private void WalkBack(Map current)
         {
 
         }
 
-        private void WalkLeft(Object current)
+        private void WalkLeft(Map current)
         {
 
         }
-        private void WalkRight(Object current)
+        private void WalkRight(Map current)
         {
 
+        }
+
+        public Point ReturnPos()
+        {
+            return playerLocation;
+        }
+        public void SetPos(int x, int y)
+        {
+          playerLocation.X = x;
+          playerLocation.Y = y;
         }
 
     }

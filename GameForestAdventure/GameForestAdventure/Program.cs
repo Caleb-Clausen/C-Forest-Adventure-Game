@@ -3,11 +3,15 @@ using GameForestAdventure.MenuObjects;
 using GameForestAdventure.Player_And_Monsters;
 using System.Data.SqlClient;
 using GameForestAdventure.MenuObjects.DataHelper;
+using System.IO;
+using System.Linq;
 
 namespace GameForestAdventure
 {
     class Program
     {
+        
+        
         // bool to keep track of game state
         public bool gameRunning = true;
 
@@ -17,16 +21,23 @@ namespace GameForestAdventure
         public enum Movement { Front, Left, Right, Back}
         static void Main(string[] args)
         {
-            Map Test = new Map();
-            Test.MapSave.Write("COOOOOOL");
+            Map forestMap = new Map();
+            forestMap.SetMapState();
+
             bool gameRunning = true;
+
             Menu newMenu = new Menu();
             newMenu.StartMenu();
             PlayerCharacter player1 = new PlayerCharacter("nice", 10, 20);
+            Monster wolf = new Monster("Wolf", 10, 20);
+            Monster bear = new Monster("bear", 10, 20);
             SceneTown Actone = new SceneTown();
-            while(gameRunning = true)
+            forestMap.totalMap[player1.ReturnPos().X, player1.ReturnPos().Y] = "p";
+            while (gameRunning == true)
             {
-                SceneTown.ScenceOne();
+                forestMap.DisplayMap();
+                forestMap.Movement(player1, forestMap);
+                //SceneTown.ScenceOne();
             }
             
 

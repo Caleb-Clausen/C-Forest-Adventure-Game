@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cloudsan\\Source\\Repos\\C-Forest-Adventure-Game\\GameForestAdventure\\GameForestAdventure\\GameForestAdventure.csproj": {}
+    "C:\\Program Files (x86)\\source\\repos\\C-Forest-Adventure-Game\\GameForestAdventure\\GameForestAdventure\\GameForestAdventure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cloudsan\\Source\\Repos\\C-Forest-Adventure-Game\\GameForestAdventure\\GameForestAdventure\\GameForestAdventure.csproj": {
+    "C:\\Program Files (x86)\\source\\repos\\C-Forest-Adventure-Game\\GameForestAdventure\\GameForestAdventure\\GameForestAdventure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cloudsan\\Source\\Repos\\C-Forest-Adventure-Game\\GameForestAdventure\\GameForestAdventure\\GameForestAdventure.csproj",
+        "projectUniqueName": "C:\\Program Files (x86)\\source\\repos\\C-Forest-Adventure-Game\\GameForestAdventure\\GameForestAdventure\\GameForestAdventure.csproj",
         "projectName": "GameForestAdventure",
-        "projectPath": "C:\\Users\\Cloudsan\\Source\\Repos\\C-Forest-Adventure-Game\\GameForestAdventure\\GameForestAdventure\\GameForestAdventure.csproj",
+        "projectPath": "C:\\Program Files (x86)\\source\\repos\\C-Forest-Adventure-Game\\GameForestAdventure\\GameForestAdventure\\GameForestAdventure.csproj",
         "packagesPath": "C:\\Users\\Cloudsan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cloudsan\\Source\\Repos\\C-Forest-Adventure-Game\\GameForestAdventure\\GameForestAdventure\\obj\\",
+        "outputPath": "C:\\Program Files (x86)\\source\\repos\\C-Forest-Adventure-Game\\GameForestAdventure\\GameForestAdventure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cloudsan\\AppData\\Roaming\\NuGet\\NuGet.Config",
