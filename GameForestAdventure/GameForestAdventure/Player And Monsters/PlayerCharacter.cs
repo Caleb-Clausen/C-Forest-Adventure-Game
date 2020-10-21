@@ -30,24 +30,6 @@ namespace GameForestAdventure.Player_And_Monsters
 
         }
 
-        private void WalkFront(Map current)
-        {
-
-        }
-
-        private void WalkBack(Map current)
-        {
-
-        }
-
-        private void WalkLeft(Map current)
-        {
-
-        }
-        private void WalkRight(Map current)
-        {
-
-        }
 
         public Point ReturnPos()
         {

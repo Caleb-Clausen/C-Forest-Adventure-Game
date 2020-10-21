@@ -13,6 +13,7 @@ namespace GameForestAdventure.MenuObjects.DataHelper
        string mapbuilder2 = "";
        public StreamReader MapBuild = new StreamReader("mapfile.txt");
        public StreamWriter MapSave = new StreamWriter(Directory.GetCurrentDirectory()+ "\\MapData.txt");
+       // totalMap holds all the map data for the current map generated from the stream writer MapBuild
        public string[,] totalMap = new string[30, 30];
        public void SetMapState()
         {
@@ -44,33 +45,39 @@ namespace GameForestAdventure.MenuObjects.DataHelper
             Console.WriteLine(mapbuilder2);
         }
 
-        public void Movement(PlayerCharacter player, Map currentmap)
+        public void PlayerMovement(PlayerCharacter player, Map currentmap)
         {
             string userChoice = "";
-            Console.WriteLine("Where would you like to move next? North,South,East,West?");
+            Console.WriteLine("Where would you like to move next? North,South,East,West? Use n,s,e,w for short commands");
             userChoice = Console.ReadLine();
 
-            if(userChoice.ToLower().Equals("north"))
+            if((userChoice.ToLower().Equals("north") | userChoice.ToLower().Equals("n")) && !currentmap.totalMap[player.ReturnPos().X-1,player.ReturnPos().Y].Equals("|"))
             {
                 currentmap.totalMap[player.ReturnPos().X, player.ReturnPos().Y] = " ";
                 player.SetPos(player.ReturnPos().X-1, player.ReturnPos().Y);
                 currentmap.totalMap[player.ReturnPos().X, player.ReturnPos().Y] = "p";
-            }else if (userChoice.ToLower().Equals("south"))
+            }else if (userChoice.ToLower().Equals("south") | userChoice.ToLower().Equals("s") && !currentmap.totalMap[player.ReturnPos().X + 1, player.ReturnPos().Y].Equals("|"))
             {
                 currentmap.totalMap[player.ReturnPos().X, player.ReturnPos().Y] = " ";
                 player.SetPos(player.ReturnPos().X + 1, player.ReturnPos().Y);
                 currentmap.totalMap[player.ReturnPos().X, player.ReturnPos().Y] = "p";
-            }else if (userChoice.ToLower().Equals("east"))
+            }else if (userChoice.ToLower().Equals("east") | userChoice.ToLower().Equals("e") && !currentmap.totalMap[player.ReturnPos().X, player.ReturnPos().Y+1].Equals("|"))
             {
                 currentmap.totalMap[player.ReturnPos().X, player.ReturnPos().Y] = " ";
                 player.SetPos(player.ReturnPos().X, player.ReturnPos().Y+1);
                 currentmap.totalMap[player.ReturnPos().X, player.ReturnPos().Y] = "p";
             }
-            else
+            else if(userChoice.ToLower().Equals("west") | userChoice.ToLower().Equals("w") && !currentmap.totalMap[player.ReturnPos().X, player.ReturnPos().Y -1].Equals("|"))
             {
                 currentmap.totalMap[player.ReturnPos().X, player.ReturnPos().Y] = " ";
                 player.SetPos(player.ReturnPos().X, player.ReturnPos().Y-1);
                 currentmap.totalMap[player.ReturnPos().X, player.ReturnPos().Y] = "p";
+            }
+            else
+            {
+                Console.WriteLine("There is an object stopping your movement, try a new direction or you typed a wrong key!");
+                PlayerMovement(player,currentmap);
+               
             }
         }
 

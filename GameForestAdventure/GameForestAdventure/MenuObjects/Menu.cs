@@ -5,6 +5,7 @@ namespace GameForestAdventure.MenuObjects
     public class Menu
     {
         int playerChoice;
+        public string Playername { get; set; }
         bool menuOpen = true;
         public Menu()
         {
@@ -22,6 +23,8 @@ namespace GameForestAdventure.MenuObjects
                 playerChoice = Convert.ToInt32(Console.ReadLine());
                 if (playerChoice.Equals(1) == true) {
                     Console.Clear();
+                    Console.WriteLine("Please input your character name");
+                    Playername = Console.ReadLine();
                     Console.WriteLine("You start game!");
                     menuOpen = false;
 
