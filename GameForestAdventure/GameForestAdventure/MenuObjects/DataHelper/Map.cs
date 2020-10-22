@@ -117,6 +117,7 @@ namespace GameForestAdventure.MenuObjects.DataHelper
             // userChoice holds the users console input
             string userChoice = "";
             Console.WriteLine("Where would you like to move next? North,South,East,West? Use n,s,e,w for short commands");
+            Console.WriteLine("go fight all the m M's on map to get a berry to apear");
             userChoice = Console.ReadLine();
 
             // if and else statement to translate each possible command into a new location for the string "P" to be placed in the 2d currentmap.totalMap[,] array

@@ -23,10 +23,10 @@ namespace GameForestAdventure.MenuObjects
             // Writes the current ASCII art to the terminal and then prompts the user to choose to go to the forest or go back to sleep
             Console.WriteLine(art);
             Console.WriteLine("You are starting your grand adventure from your humble house!");
-            Console.WriteLine("Your significant other says it's time to go out and get some berries!");
+            Console.WriteLine("Your significant other says it's time to go out and get a magic berry!");
             Console.WriteLine("You better head to the forest to go get the magic berry");
-            Console.WriteLine("You have two choices, 1.rollover and sleep or 2.get out to the forest?");
-            Console.WriteLine("What will you do?");
+            Console.WriteLine("You have two choices, \n 1.rollover and sleep or \n 2.get out to the forest?");
+            Console.WriteLine(" What will you do?");
             // if user choose 1 then the game ends as a joke and it sets the GameForestAdventure.Program enum to the next scene called exit
             if (Int32.Parse(Console.ReadLine()) == 1)
             {
