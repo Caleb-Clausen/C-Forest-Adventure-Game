@@ -12,6 +12,7 @@ using GameForestAdventure.MenuObjects.DataHelper;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
+using System.Runtime.ExceptionServices;
 
 namespace GameForestAdventure
 {
@@ -24,7 +25,7 @@ namespace GameForestAdventure
 
         // enum to allow skills of the player and enemies
         public enum CombatActions { Attack, Spellattack, Punch, Clawattack}
-        public enum CurrentScene { Town, Forest, Menu, Exit}
+        public enum CurrentScene { Town, Forest, Menu, Exit, ForestWithBerry }
         public static CurrentScene currentSceneWorld = new CurrentScene();
         static void Main(string[] args)
         {
@@ -39,31 +40,53 @@ namespace GameForestAdventure
             currentSceneWorld = CurrentScene.Town;
             //Create the objects that will be displayed by the forestMap.totalMap[] field
             // PlayerCharacter is the user, Monster, the NPC class 
-            PlayerCharacter player1 = new PlayerCharacter(newMenu.Playername, 10, 20);
+            PlayerCharacter player1 = new PlayerCharacter(newMenu.playerName, 10, 20);
             Monster wolf = new Monster("Wolf", 10, 20,forestMap);
             Monster bear = new Monster("bear", 10, 20, forestMap);
             Monster wolf1 = new Monster("Wolf", 10, 20, forestMap);
-            Monster bear1 = new Monster("bear", 10, 20, forestMap);
-            Monster wolf2 = new Monster("Wolf", 10, 20, forestMap);
-            Monster bear2 = new Monster("bear", 10, 20, forestMap);
+           // Monster bear1 = new Monster("bear", 10, 20, forestMap);
+            //Monster wolf2 = new Monster("Wolf", 10, 20, forestMap);
+
+            //Monster bear2 = new Monster("bear", 10, 20, forestMap);
             SceneTown Actone = new SceneTown();
+           
         forestMap.totalMap[player1.ReturnPos().X, player1.ReturnPos().Y] = "p";
             while (gameRunning == true)
             {
                 switch (currentSceneWorld)
                 {
-                    case CurrentScene.Forest:
-                        forestMap.DisplayMap();
-                        forestMap.PlayerMovement(player1, forestMap);
-                        continue;
-                    case CurrentScene.Menu:
-                        return;
                     case CurrentScene.Town:
                         Actone.ScenceOne(player1);
                         continue;
+                    case CurrentScene.Forest:
+                        forestMap.DisplayMap();
+                        forestMap.PlayerMovement(player1, forestMap);
+                        if (forestMap.CheckBerryReady(forestMap) == true)
+                        {
+                            currentSceneWorld = CurrentScene.ForestWithBerry;
+                            forestMap.totalMap[2, 7] = "B";
+                            Console.WriteLine("The Bery has arpeared! go get it to finish  this quest of livelyhood, press any key to continue");
+                            Console.ReadKey();
+                        }
+                        continue;
+                    case CurrentScene.ForestWithBerry:
+                        forestMap.DisplayMap();
+                        forestMap.PlayerMovement(player1, forestMap);
+                        if (forestMap.CheckBerryFound(forestMap) == true)
+                        {
+                            Console.WriteLine("Great Job {0}, You have sruvided wolf attacks and bear attacks, you are well on your way to surviving this winter!", player1.playerName);
+                            Console.WriteLine("Until next time, Adventure awaits! Ciao Ciao");
+                            Console.ReadKey();
+                            currentSceneWorld = CurrentScene.Exit;
+                            
+                        }
+                        continue;
+                    case CurrentScene.Menu:
+                        return;
                     case CurrentScene.Exit:
                         gameRunning = false;
                         return;
+  
 
                 }
             }

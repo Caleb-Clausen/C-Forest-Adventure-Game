@@ -6,7 +6,7 @@ using System.Text;
 using GameForestAdventure.MenuObjects.DataHelper;
 namespace GameForestAdventure.Player_And_Monsters
 {
-    class PlayerCharacter : GenericCharacterActions
+    class PlayerCharacter : IGenericCharacterActions
     {
         Point playerLocation = new Point(28,14);
         int playerHealth;

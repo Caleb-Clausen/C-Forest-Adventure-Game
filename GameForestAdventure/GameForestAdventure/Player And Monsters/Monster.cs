@@ -6,7 +6,7 @@ using GameForestAdventure;
 using GameForestAdventure.MenuObjects.DataHelper;
 namespace GameForestAdventure.Player_And_Monsters
 {
-    class Monster : GenericCharacterActions
+    class Monster : IGenericCharacterActions
     {
         
         Random randomonsterlocation = new Random(); 
