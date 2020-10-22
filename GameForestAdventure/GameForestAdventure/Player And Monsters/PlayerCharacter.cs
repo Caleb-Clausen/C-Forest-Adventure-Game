@@ -15,8 +15,8 @@ namespace GameForestAdventure.Player_And_Monsters
     {
         // Set the player location point object to prepare it to be displayed on the Map.totalMap[x,y] Array
         Point playerLocation = new Point(28, 14);
-        int playerHealth;
-        int playerMana;
+        private int playerHealth;
+        private int playerMana;
         public string playerName { get; set; }
 
         // Default constructor override to allow for Player name, player health, Player mana, to be part of the instance

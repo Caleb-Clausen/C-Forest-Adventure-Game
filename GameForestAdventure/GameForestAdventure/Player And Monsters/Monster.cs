@@ -22,9 +22,9 @@ namespace GameForestAdventure.Player_And_Monsters
 
         // Point object to hold the monsters x and y coordinates to allow it to be tracked in 2d Map.totalMap[,] arrays
         Point monsterLocation = new Point(0, 0);
-        string monsterName;
-        int monsterHealth;
-        int monsterMana;
+       private string monsterName;
+       private int monsterHealth;
+       private int monsterMana;
 
         // Default constructor override to allow for monster name, monster health, monstermana and currentmap to be part of the instance
         public Monster(string monsterName, int monsterHealth, int monsterMana, Map currentmap)

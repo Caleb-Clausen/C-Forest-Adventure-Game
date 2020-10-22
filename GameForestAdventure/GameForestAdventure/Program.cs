@@ -12,6 +12,7 @@ using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Runtime.ExceptionServices;
+using System.Collections.Generic;
 
 namespace GameForestAdventure
 {
@@ -29,6 +30,8 @@ namespace GameForestAdventure
         public static CurrentScene currentSceneWorld = new CurrentScene();
         static void Main(string[] args)
         {
+           
+           
             //Create a new map and call the SetMapState to create the 2d array from the text file in current working directory
             Map forestMap = new Map();
             forestMap.SetMapState();
@@ -41,14 +44,20 @@ namespace GameForestAdventure
             //Create the objects that will be displayed by the forestMap.totalMap[] field
             // PlayerCharacter is the user, Monster, the NPC class 
             PlayerCharacter player1 = new PlayerCharacter(newMenu.playerName, 10, 20);
-            Monster wolf = new Monster("Wolf", 10, 20,forestMap);
-            Monster bear = new Monster("bear", 10, 20, forestMap);
-            Monster wolf1 = new Monster("Wolf", 10, 20, forestMap);
-           // Monster bear1 = new Monster("bear", 10, 20, forestMap);
-           //Monster wolf2 = new Monster("Wolf", 10, 20, forestMap);
-           //Monster bear2 = new Monster("bear", 10, 20, forestMap);
+            // Create a list to hold monsters, speed up process of populating map
+            List<Monster> totalmonsters = new List<Monster>();
+            int monsterCount = 2;
+            while (monsterCount < 5)
+            {
+                Monster wolf = new Monster("Wolf", 10, 20, forestMap);
+                Monster bear = new Monster("bear", 10, 20, forestMap);
+                totalmonsters.Add(wolf);
+                totalmonsters.Add(bear);
+                monsterCount = monsterCount + 2;
+            }
 
-           // Create a town sence to get the character options rolling
+
+            // Create a town sence to get the character options rolling
             SceneTown Actone = new SceneTown();
            // Set the starting player posistion 
             forestMap.totalMap[player1.ReturnPos().X, player1.ReturnPos().Y] = "p";
