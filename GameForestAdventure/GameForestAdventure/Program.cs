@@ -11,6 +11,8 @@ using System.Data.SqlClient;
 using GameForestAdventure.MenuObjects.DataHelper;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+
 namespace GameForestAdventure
 {
     class Program
@@ -22,11 +24,10 @@ namespace GameForestAdventure
 
         // enum to allow skills of the player and enemies
         public enum CombatActions { Attack, Spellattack, Punch, Clawattack}
-        public enum CurrentScene { Town, Forest, Menu}
-        CurrentScene currentSceneWorld = new CurrentScene();
+        public enum CurrentScene { Town, Forest, Menu, Exit}
+        public static CurrentScene currentSceneWorld = new CurrentScene();
         static void Main(string[] args)
         {
-            CurrentScene currentSceneWorld = new CurrentScene();
             //Create a new map and call the SetMapState to create the 2d array from the text file in current working directory
             Map forestMap = new Map();
             forestMap.SetMapState();
@@ -46,27 +47,26 @@ namespace GameForestAdventure
             Monster wolf2 = new Monster("Wolf", 10, 20, forestMap);
             Monster bear2 = new Monster("bear", 10, 20, forestMap);
             SceneTown Actone = new SceneTown();
-            forestMap.totalMap[player1.ReturnPos().X, player1.ReturnPos().Y] = "p";
+        forestMap.totalMap[player1.ReturnPos().X, player1.ReturnPos().Y] = "p";
             while (gameRunning == true)
             {
                 switch (currentSceneWorld)
                 {
                     case CurrentScene.Forest:
-                        return;
+                        forestMap.DisplayMap();
+                        forestMap.PlayerMovement(player1, forestMap);
+                        continue;
                     case CurrentScene.Menu:
                         return;
                     case CurrentScene.Town:
-                        forestMap.DisplayMap();
-                        forestMap.PlayerMovement(player1, forestMap);
+                        Actone.ScenceOne(player1);
+                        continue;
+                    case CurrentScene.Exit:
+                        gameRunning = false;
                         return;
 
                 }
-
-            
-                //SceneTown.ScenceOne();
             }
-            
-
         }
     }
 }

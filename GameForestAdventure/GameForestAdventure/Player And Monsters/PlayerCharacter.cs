@@ -11,7 +11,7 @@ namespace GameForestAdventure.Player_And_Monsters
         Point playerLocation = new Point(28,14);
         int playerHealth;
         int playerMana;
-        string playerName;
+        public string playerName { get; set; }
         public PlayerCharacter(string playerName, int playerHealth, int playerMana)
         {
             this.playerName = playerName;
@@ -40,6 +40,5 @@ namespace GameForestAdventure.Player_And_Monsters
           playerLocation.X = x;
           playerLocation.Y = y;
         }
-
     }
 }

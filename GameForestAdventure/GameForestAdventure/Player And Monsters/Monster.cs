@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
+using GameForestAdventure;
 using GameForestAdventure.MenuObjects.DataHelper;
 namespace GameForestAdventure.Player_And_Monsters
 {
     class Monster : GenericCharacterActions
     {
+        
         Random randomonsterlocation = new Random(); 
         Point monsterLocation = new Point(0,0);
         string monsterName;
