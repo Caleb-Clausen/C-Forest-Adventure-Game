@@ -11,12 +11,16 @@ This and utilizing stream readers to generate map files based off text allows fo
 Below are examples of different scenes in the game.
 
 the Menu
+
 ![GitHub Logo](https://github.com/Caleb-Clausen/C-Forest-Adventure-Game/blob/master/GameForestAdventure/ReadMeImages/Menu.png)
 The User Name 
+
 ![GitHub Logo](https://github.com/Caleb-Clausen/C-Forest-Adventure-Game/blob/master/GameForestAdventure/ReadMeImages/Name%20Screen.png)
 The Starting Town Scene
+
 ![GitHub Logo](https://github.com/Caleb-Clausen/C-Forest-Adventure-Game/blob/master/GameForestAdventure/ReadMeImages/Town%20Scene.png)
 The 2D Array Forest Map from Text file Screen
+
 ![GitHub Logo](https://github.com/Caleb-Clausen/C-Forest-Adventure-Game/blob/master/GameForestAdventure/ReadMeImages/Forest%20Map.png)
 
 
