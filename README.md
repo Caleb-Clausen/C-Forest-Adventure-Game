@@ -10,6 +10,6 @@ The code uses ascii text used as the graphical portion and user input to steer t
 This and utilizing stream readers to generate map files based off text allows for character movement on a console map. 
 Below are examples of different scenes in the game.
 
-![GitHub Logo](C:\Users\Cloudsan\Desktop\Paint\done)
+![GitHub Logo]()
 Format: ![Alt Text](url)
 
